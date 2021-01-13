@@ -1,0 +1,152 @@
+body {
+    background: #e5fdff34;
+    margin: 0px;
+    font-family: "Roboto Mono", sans-serif;
+    /* max-width: 1000px; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+
+/* navbar  section */
+.navbar {
+    padding:30px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar > .navbar-left > div {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* .navbar-button {
+    padding-bottom: 5px;
+} */
+
+.nav-link-wrapper {
+    /* padding-right: 20px; */
+    padding-bottom: 6px;
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar > .navbar-right {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* image section */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+/* image darkening */
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-darken:hover {
+    transition: 1s;
+}
+
+.img-lighten {
+    transition: 1s;
+    transition-delay: 0.5s;
+    filter: brightness(100%);
+}
+
+.img-lighten:hover {
+    transition: 1s;
+}
+
+.two-colomn-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}
